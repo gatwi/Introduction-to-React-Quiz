@@ -77,7 +77,7 @@ function App() {
     <img src={logo} className="App-logo" alt="logo" />
       <h3>User names</h3>
       <ul>{userItems}</ul>
-      <button onClick={() => setShow(!show)}>{show ? "Hide Element Below" : "Show Element Below"}</button>
+      <button onClick={() => setShow(!show)}>{show ? "Show Element Below" : "Hide Element Below"}</button>
       {show && <div>JSX is cool!</div>}
       <Parent>
       <Child />
