@@ -2,28 +2,41 @@ import React from "react";
 import logo from './logo.svg';
 import './App.css';
 
-/**
-  Challenge: Display all users to the browser
-**/
+// /**
+//   Challenge: Display all users to the browser
+// **/
 
-const users = [
-  { name: "John Doe", id: 1 },
-  { name: "Jane Doe", id: 2 },
-  { name: "Billy Doe", id: 3 }
-];
+// const users = [
+//   { name: "John Doe", id: 1 },
+//   { name: "Jane Doe", id: 2 },
+//   { name: "Billy Doe", id: 3 }
+// ];
+
+// const listUsers = users.map((user) => <li key= {user.id}>{user.name}</li>);
+
+// function App() {
+//   return (
+//     <div>
+//       <h3>User names</h3>
+//       <ul>{listUsers}</ul>
+//     </div>
+//   );
+// }
+
+// ReactDOM.render(<App></App>, document.getElementById("root"));
 
 // comment this out after completion and uncomment code below it to proceed
 function Child() {
   return <div>This is children content</div>;
 }
-/**
-  Challenge: Uncomment this code to complete quiz
+// /**
+//   Challenge: Uncomment this code to complete quiz
 
-function Child() {
+function Child({ setValue }) {
   return (
     <>
       <div>Child</div>
-      <button>Change Parent Value</button>
+      <button onClick={() => setValue("")}>Change Parent Value</button>
     </>
   );
 }
@@ -42,13 +55,15 @@ function Parent() {
       </div>
 
       <div className="wrapper">
-        <Child />
+        <Child setValue={setValue}/>
       </div>
     </>
   );
 }
-Uncomment this to tackle quiz
-**/
+
+ReactDOM.render(document.getElementById("root"));
+// // Uncomment this to tackle quiz
+// **/
 
 // Comment out after completion
 function Parent() {
@@ -61,7 +76,7 @@ function Parent() {
 // Comment above code after completion
 
 function App() {
-  const [] = React.useState(true);
+  const [show, setShow] = React.useState(true);
   return (
     
     <>
@@ -69,7 +84,7 @@ function App() {
     <img src={logo} className="App-logo" alt="logo" />
       <h3>User names</h3>
       <ul></ul>
-      <button>Hide Element Below</button>
+      <button onClick={() => setShow(!show)}>{show ? "Hide Element Below" : "Show Element Below"}</button>
 
       <div>Toggle Challenge</div>
       <Parent>
