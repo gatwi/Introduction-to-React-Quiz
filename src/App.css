@@ -35,6 +35,9 @@ button {
 
 #root {
   padding: 10px;
+  color: rgb(255, 0, 4);
+  font-size: 20px;
+  font-weight: 100px;
 }
 
 
@@ -49,7 +52,7 @@ ul {
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
   }
   to {
     transform: rotate(180deg);

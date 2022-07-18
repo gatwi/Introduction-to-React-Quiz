@@ -78,9 +78,7 @@ function App() {
       <h3>User names</h3>
       <ul>{userItems}</ul>
       <button onClick={() => setShow(!show)}>{show ? "Hide Element Below" : "Show Element Below"}</button>
-      {show && <div>Toggled!</div>}
-      <div>Toggle Challenge</div>
-      <div>JSX is cool!</div>
+      {show && <div>JSX is cool!</div>}
       <Parent>
       <Child />
     </Parent>
