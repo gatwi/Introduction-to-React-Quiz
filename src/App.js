@@ -79,7 +79,7 @@ function App() {
       <ul>{userItems}</ul>
       <button onClick={() => setShow(!show)}>{show ? "Show Element Below" : "Hide Element Below"}</button>
       {show && <div>JSX is cool!</div>}
-      <Parent>
+      <Parent >
       <Child />
     </Parent>
     </>
