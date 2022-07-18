@@ -42,6 +42,7 @@ function Parent() {
       <h3>Update Parent State Challenge (Using Callback)</h3>
       <div className="wrapper">
         <div>Parent</div>
+        <Child />
         <div className="box-wrapper">{value}</div>
       </div>
 
