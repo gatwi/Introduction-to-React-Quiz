@@ -17,20 +17,20 @@ const userItems = users.map((user) => <li key= {user.id}>{user.name}</li>);
 
 
 // comment this out after completion and uncomment code below it to proceed
-function Child() {
-  return <div>This is children content</div>;
-}
+// function Child() {
+//   return <div>This is children content</div>;
+// }
 // /**
 //   Challenge: Uncomment this code to complete quiz
 
-// function Child({ setValue }) {
-//   return (
-//     <>
-//       <div>Child</div>
-//       <button onClick={() => setValue("Parent has been updated")}>Change Parent Value</button>
-//     </>
-//   );
-// }
+function Child({ setValue }) {
+  return (
+    <>
+      <div>Child</div>
+      <button onClick={() => setValue("Parent has been updated")}>Change Parent Value</button>
+    </>
+  );
+}
 
 function Parent() {
   const [value, setValue] = React.useState(

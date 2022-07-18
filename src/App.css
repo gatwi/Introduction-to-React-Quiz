@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: auto;
 }
 
 .App-logo {
@@ -29,7 +29,7 @@ button {
 }
 
 .box-wrapper {
-  border: 2px solid #f76cb2;
+  border: 3px solid #6cf788;
   width: max-content;
 }
 
@@ -52,6 +52,6 @@ ul {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
